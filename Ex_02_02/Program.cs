@@ -4,18 +4,19 @@ static class Program
 {
     static void Main(string[] args)
     {
-        // 数値の演算
-        Console.WriteLine($"10 + 3 = {10 + 3}");
-        Console.WriteLine($"10 - 3 = {10 - 3}");
-        Console.WriteLine($"10 * 3 = {10 * 3}");
-        Console.WriteLine($"10 / 3 = {10 / 3}");
-        Console.WriteLine($"10 % 3 = {10 % 3}");
-        // 文字列の連結
-        Console.WriteLine($"ABC + XYZ = {"ABC" + "XYZ"}");
-        // 文字列と他のデータ型の結合
-        Console.WriteLine($"ABC + 1 = {"ABC" + 1}");
-        // その他、文字列の結合と表示（参考）
-        Console.WriteLine($"ABC + 2 = {"ABC"}{2}");
-        Console.WriteLine("ABC + 3 = {0}{1}", "ABC", 3);
+        bool a = true, b = false;
+        Console.WriteLine($"a && a = {a && a}");
+        Console.WriteLine($"a && b = {a && b}");
+        Console.WriteLine($"b && a = {b && a}");
+        Console.WriteLine($"b && b = {b && b}");
+        Console.WriteLine($"a || a = {a || a}");
+        Console.WriteLine($"a || b = {a || b}");
+        Console.WriteLine($"b || a = {b || a}");
+        Console.WriteLine($"b || b = {b || b}");
+        int x = 1;
+        Console.WriteLine($"b && x++ > 1 = {b && x++ > 1}");
+        Console.WriteLine($"x = {x}");
+        Console.WriteLine($"b & x++ > 1 = {b & x++ > 1}");
+        Console.WriteLine($"x = {x}");
     }
 }
