@@ -1,4 +1,4 @@
-namespace Ex_03_02;
+namespace Ex_03_03;
 
 /// <summary>
 /// 商品情報を表すクラス

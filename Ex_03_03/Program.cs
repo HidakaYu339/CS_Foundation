@@ -11,9 +11,8 @@ static class Program
         item.itemName = Console.ReadLine();
         Console.Write("単価を入力してください->");
         item.price = int.Parse(Console.ReadLine());
-        Console.WriteLine("結果");
-        Console.WriteLine($"商品番号={item.itemNo}");
-        Console.WriteLine($"商品名={item.itemName}");
-        Console.WriteLine($"単価={item.price}");
+        Console.Write("新しい単価を入力してください->");
+        item.price = int.Parse(Console.ReadLine());
+
     }
 }
