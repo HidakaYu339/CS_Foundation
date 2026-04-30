@@ -1,4 +1,4 @@
-namespace Ex_03_05;
+namespace Ex_03_06;
 
 /// <summary>
 /// 演習-02 インスタンスを複数作成し、値が個別に保持されていることを確認
@@ -21,6 +21,14 @@ public class Item
         this.itemName = pitemName;
         this.price = pprice;
     }
+
+    /// <summary>
+    /// 演習６
+    /// </summary>
+
+    public Item()
+    {
+    }
     /// <summary>
     /// 演習-04 フィールドの値を出力するメソッドを作成して利用する
     /// 模範解答
@@ -39,6 +47,10 @@ public class Item
     public void ChangePrice(int pprice)
     {
         price = pprice;
+    }
+    public void ChangePrice(string pprice)
+    {
+        price = int.Parse(pprice);
     }
     /// <summary>
     /// 演習-06 戻り値を返すメソッドを作成して利用する
@@ -66,10 +78,7 @@ public class Item
     /// </summary>
     /// <param name="price">金額(文字列型)</param>
     /// 
-    public void ChangePrice(string pprice)
-    {
-        price = int.Parse(pprice);
-    }
+
 
 
 }

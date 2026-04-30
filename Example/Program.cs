@@ -4,18 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-
-
-        Warrior warrior2 = new();
-        warrior2.name = "ユースケ";
-        warrior2.hp = 8;
-        Console.WriteLine(warrior2.name);
-        Console.WriteLine(warrior2.hp);
-
-
-        Warrior warrior3 = new("三郎");
-        Console.WriteLine(warrior3.name);
-        Console.WriteLine(warrior3.hp);
+        Warrior character = new();
+        character.Name = "戦士";
+        character.Hp = 10;//setアクセッサがprivateなので設定不可
+        character.Ap = 10;//読み取り専用プロパティなので設定不可
     }
 }
 
