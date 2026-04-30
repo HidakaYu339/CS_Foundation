@@ -11,8 +11,6 @@ static class Program
         item.itemName = Console.ReadLine();
         Console.Write("単価を入力してください->");
         item.price = int.Parse(Console.ReadLine());
-
-        Console.WriteLine($"税込み金額={item.itemNo}");
-
+        Console.WriteLine("税込み金額={0}", item.CalculateTaxAmount());
     }
 }
