@@ -11,6 +11,11 @@ namespace Ex_03_09
 
         public NetAccount(string AccountNo, string AccountName, int Balance, int Point) : base(AccountNo, AccountName, Balance)
         {
+            this.Point = Point;
+        }
+
+        public override void Print()
+        {
 
         }
     }
